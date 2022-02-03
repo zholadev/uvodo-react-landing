@@ -1,0 +1,43 @@
+@import '../../helpers/__vars'
+
+.pay-container
+  width: 100%
+  height: 100%
+  position: relative
+  margin: 130px 0
+  .box
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    flex-direction: row
+    .left-section
+      width: 100%
+      max-width: 400px
+      height: auto
+      margin-bottom: 42px
+      .top-text
+        color: $violet-color
+        font-size: $fs-16
+        margin-bottom: 17px
+      .btn-group
+        margin-top: 40px
+    .right-section
+      position: relative
+      width: 100%
+      max-width: 692px
+      height: auto
+      .left-img
+        position: absolute
+        top: -70px
+        left: -200px
+        z-index: 2
+      .center-img
+        position: absolute
+        z-index: 1
+        top: -200px
+      .right-img
+        position: absolute
+        right: 130px
+        top: 50px
+        z-index: 2

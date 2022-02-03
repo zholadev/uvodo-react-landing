@@ -2,7 +2,7 @@ import React from 'react'
 import './button.sass'
 
 const Button = (props) => {
-  const { small, big, border, text, violet, onClick, width } = props
+  const { small, big, border, text, violet, onClick, width, dark } = props
 
   return big ? (
     <button
@@ -16,17 +16,15 @@ const Button = (props) => {
     <button
       style={{ width: `${width}px` }}
       className={
-        border ? 'btn btn-small border-violet' : 'btn btn-small btn-violet'
+        border
+          ? 'btn btn-small border-violet'
+          : dark
+          ? 'btn btn-small btn-dark'
+          : 'btn btn-small btn-violet'
       }
     >
       {text}
     </button>
-  ) : big ? (
-    <button className="btn btn-violet">{text}</button>
-  ) : big ? (
-    <button className="btn btn-border">{text}</button>
-  ) : big ? (
-    <button className="btn btn-big">{text}</button>
   ) : null
 }
 

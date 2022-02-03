@@ -1,10 +1,14 @@
 import React from 'react'
-import './header.sass'
+import HeaderBorder from '../headerBorder/HeaderBorder'
+import Navbar from '../navbar/Navbar'
+import Socials from '../socials/Socials'
 
 const Header = () => {
   return (
     <div className="header-container">
-      <div>asdasd</div>
+      <Navbar />
+      <HeaderBorder />
+      <Socials />
     </div>
   )
 }

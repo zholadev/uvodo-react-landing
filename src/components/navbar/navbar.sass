@@ -1,0 +1,57 @@
+@import '../../helpers/__vars'
+
+.navbar
+  width: 100%
+
+  display: flex
+  justify-content: center
+  align-items: center
+
+  position: fixed
+  background-color: transparent
+
+  z-index: 10000
+  .navbar-box
+    padding: 25px 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .logo-box
+      margin: 0
+      padding: 0
+      position: relative
+      display: block
+    .navbar-category-list
+      width: 100%
+      height: auto
+
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      gap: 20px
+
+      list-style: none
+      .category-list-item
+        font-size: $fs-16
+        color: $dark-bg-color
+
+        cursor: pointer
+
+        transition: all .3s ease-in-out
+        position: relative
+        &::after
+          content: ''
+          width: 0
+          height: 1px
+          background-color: $dark-bg-color
+          position: absolute
+          left: 0
+          bottom: 0
+          transition: all .3s ease-in-out
+        &:hover
+          &::after
+            width: 100%
+      @media screen and ( max-width: 996px )
+        display: none
+        visibility: hidden
+        opacity: 0

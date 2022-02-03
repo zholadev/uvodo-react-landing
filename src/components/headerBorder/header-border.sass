@@ -1,0 +1,66 @@
+@import '../../helpers/__vars'
+
+.header-border-container
+  width: 100%
+  height: auto
+
+  position: relative
+  display: block
+
+  padding-top: 200px
+
+  background-image: url('../../assets/images/backgrounds/header-bg.png')
+  background-size: cover
+  background-position: center center
+  background-repeat: no-repeat
+  .header-border-box
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    flex-wrap: wrap
+    flex-direction: row
+
+    width: 100%
+    height: auto
+    .left-section
+      z-index: 10
+      width: 100%
+      max-width: 500px
+      .info-place
+        .top-text
+          text-transform: uppercase
+          color: $gray-color
+          font-size: $fs-16
+
+          margin-bottom: 14px
+        .btn-group
+          display: flex
+          justify-content: flex-start
+          gap: 12px
+          align-items: center
+          flex-wrap: wrap
+          flex-direction: row
+          margin-top: 42px
+    .right-section
+      position: relative
+      width: 100%
+      max-width: 780px
+      height: auto
+      .header-left-img
+        position: absolute
+        z-index: 1
+        left: -270px
+        z-index: 1
+      .header-center-img
+        position: absolute
+        z-index: 1
+        top: -58px
+        left: -15px
+        z-index: 2
+      .header-right-img
+        position: absolute
+        z-index: 1
+        top: -151px
+        left: 251px
+        z-index: 1
